@@ -48,11 +48,10 @@ class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewD
                 print(dataDictionary)
                 
                 // TODO: Get the posts and store in posts property
-                self.tableView.reloadData()
                 let responseDictionary = dataDictionary["response"] as! [String: Any]
                 self.posts = responseDictionary["posts"] as! [[String: Any]] //self.post is needed because the code is working with a closure. this is because it is in an enclsoure for self.post
                 // TODO: Reload the table view
-                
+                self.tableView.reloadData()
             }
         }
         task.resume()
