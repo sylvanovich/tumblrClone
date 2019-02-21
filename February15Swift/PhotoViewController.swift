@@ -9,7 +9,7 @@
 import UIKit
 import AlamofireImage
 
-class PhotoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     /*
@@ -29,7 +29,7 @@ class PhotoViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //var posts: [[String: Any]] = []
     
-    var posts : [[String: Any]] = [] //this is to store posts
+    var posts = [[String: Any]]() //this is to store posts
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +69,7 @@ class PhotoViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.textLabel!.text = "row: \(indexPath.row)"
         return cell */
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCellTableViewCell", for: indexPath) as! PhotoCellTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCellTableViewCell") as! PhotoCellTableViewCell
 
         let post = posts[indexPath.row] // possible to get a nil value
         if let unwrappedPhotos = post["photos"] as? [[String: Any]] {
@@ -79,8 +79,8 @@ class PhotoViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let originalSize = photo["original_size"] as! [String: Any]
             let urlString = originalSize["url"] as! String
             
-            let url = URL(string:urlString)
-            cell.postedView.af_setImage(withURL: url!)
+            let url = URL(string: urlString)
+            cell.posterView.af_setImage(withURL: url!)
         }
         
         return cell

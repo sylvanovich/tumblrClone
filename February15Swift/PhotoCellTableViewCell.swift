@@ -10,6 +10,9 @@ import UIKit
 
 class PhotoCellTableViewCell: UITableViewCell {
 
+    //added on 2/20 @ 11:24pm from poster veiw
+    @IBOutlet weak var posterView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

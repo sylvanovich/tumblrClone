@@ -72,10 +72,10 @@
 		D23F4C8E22177B0A002CA6D6 /* February15Swift */ = {
 			isa = PBXGroup;
 			children = (
-				D23F4CA122177B9E002CA6D6 /* PhotoViewController.swift */,
-				D23F4CA322178DD0002CA6D6 /* PhotoCellTableViewCell.swift */,
 				D23F4C8F22177B0A002CA6D6 /* AppDelegate.swift */,
 				D23F4C9322177B0A002CA6D6 /* Main.storyboard */,
+				D23F4CA322178DD0002CA6D6 /* PhotoCellTableViewCell.swift */,
+				D23F4CA122177B9E002CA6D6 /* PhotoViewController.swift */,
 				D23F4C9622177B0C002CA6D6 /* Assets.xcassets */,
 				D23F4C9822177B0C002CA6D6 /* LaunchScreen.storyboard */,
 				D23F4C9B22177B0C002CA6D6 /* Info.plist */,
