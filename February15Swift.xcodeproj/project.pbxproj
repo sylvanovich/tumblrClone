@@ -28,6 +28,9 @@
 		D23F4C9B22177B0C002CA6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23F4CA122177B9E002CA6D6 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		D23F4CA322178DD0002CA6D6 /* PhotoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCellTableViewCell.swift; sourceTree = "<group>"; };
+		D2494B65221E64DE005D7528 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2494B66221E64DE005D7528 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2494B67221E64DE005D7528 /* Pods_February15Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_February15Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,21 @@
 			path = February15Swift;
 			sourceTree = "<group>";
 		};
+		D2494B68221E64DE005D7528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2494B65221E64DE005D7528 /* Alamofire.framework */,
+				D2494B66221E64DE005D7528 /* AlamofireImage.framework */,
+				D2494B67221E64DE005D7528 /* Pods_February15Swift.framework */,
+			);
+			name = Products;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC408912E002AF44ECF2C5D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2494B68221E64DE005D7528 /* Products */,
 				AB3091F47AC27470EC954C5B /* Pods_February15Swift.framework */,
 			);
 			name = Frameworks;
